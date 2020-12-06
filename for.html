@@ -16,14 +16,14 @@
     </nav>
 
     <script>
-        colors=["red","yellow","blue"];
         function forloop() {
-            var i=0,len=colors.length;
-            for (; i<len; ){
-                document.write(colors[i] + "<br>");
-                i++;
+            var x;
+            var txt="";
+            var colors={fcolor:"red",scolor:"yellow",tcolor:"blue"};
+            for (x in colors){
+                txt=txt + colors[x];
             }
-            document.getElementById("for_demo").innerHTML=x;
+            document.getElementById("for_demo").innerHTML=txt;
 
         }
     </script>
