@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+<body>
+
+    <p>double click the button below, three types of colors will be displayed</p>
+    <button ondblclick="forloop()">double click</button>
+    <p id="for_demo"></p>
+
+    <nav>
+        <a href="while.html">while loop</a>
+    </nav>
+
+    <script>
+        colors=["red","yellow","blue"];
+        function forloop() {
+            var i=0,len=colors.length;
+            for (; i<len; ){
+                document.write(colors[i] + "<br>");
+                i++;
+            }
+            document.getElementById("for_demo").innerHTML=x;
+
+        }
+    </script>
+
+    </body>
+    </html>

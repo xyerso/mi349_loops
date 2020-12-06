@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop</title>
+</head>
+<body>
+
+    <p>double click the button below, code block keep looping as long as the number is less than 10</p>
+    <button ondblclick="whileloop()">double click</button>
+    <p id="while_demo"></p>
+
+    <nav>
+        <a href="for.html">for loop</a>
+    </nav>
+
+    <script>
+        function whileloop(){
+            var x="",i=0;
+            while (i<10){
+                x=x + "number " + i + "<br>";
+                i++;
+            }
+            document.getElementById("while_demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>
